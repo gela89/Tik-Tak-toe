@@ -1,0 +1,156 @@
+body{
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+ height: 90vh;
+}
+
+.container {
+  width: 500px;
+  height: 700px;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  
+  
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 1.25rem;
+  gap: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 7px solid rgba(0, 0, 0, 0.373);
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: cursive;
+}
+.cell:hover{
+  background-color:#EBF6F7
+}
+
+
+button:hover{
+  background-color: hsl(146, 50%, 46%);
+}
+button {
+  margin-top: 1rem;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+#pleyertuen{
+font-size: 40px;
+font-family: cursive;
+}
+#headerDiv{
+display: flex;
+justify-content: center;
+width: 400px;
+height: 200px;
+color: black;
+background-color: rgba(169, 171, 38, 0.476);
+padding: 1rem;
+border-radius: 15px;
+margin-left: 10px;
+}
+
+.coverX{
+display: flex;
+align-items: center;
+  margin-right: 3rem;
+  margin-top: auto;
+}
+
+#coverO{
+  margin-left: -4rem;
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+margin-top: auto; 
+color: white;
+ } 
+
+.X-pley{
+  display: flex;
+ flex-direction: column-reverse;
+ gap: 2em;
+  font-size: 25px;
+  background-color: rgb(192, 192, 192);
+  padding-right: 100px;
+width: 100px;
+height: 198px;;
+
+}
+.XO_contayner{
+
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+ 
+}
+#scoreX{
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 50px;
+margin-left: auto;
+}
+#scoreO{
+  font-size: 50px;
+  color: white;
+  margin-right: auto;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.O-pley{
+ display: flex;
+ flex-direction: column-reverse;
+ gap: 2em;
+  font-size: 25px;
+  background-color: black;
+  padding-left: 100px;
+  width: 100px;
+  height: 198px;
+ border-radius: 10px;
+}
+#winerPleyer{
+  z-index: 1;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 14rem;
+  font-size: 40px;
+  color: rgb(16, 173, 14)
+}
+
+#scoreaUpdate{
+border-radius: 10px; 
+border-style: none;
+background-color: seagreen;
+color: white;
+cursor: pointer;
+}
+
+#scoreaUpdate:hover{
+  background-color:  hsl(146, 50%, 46%);
+}
+.restart{
+border-radius: 10px; 
+border-style: none;
+background-color: seagreen;
+color: white;
+cursor: pointer;
+}
